@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import data from "../../data.json";
 import { unansweredSubjects } from "../../content";
+import { forumAnswers, forumQuestions } from "../../forum-data";
 import { SiteFooter, SiteHeader } from "../../site-header";
 
 type PageProps = { params: Promise<{ slug: string }> };
@@ -67,6 +68,7 @@ export default async function CandidatePage({ params }: PageProps) {
             <strong>On this page</strong>
             <a href="#profile">Profile</a>
             {answered && <a href="#questionnaire">Questionnaire</a>}
+            <a href="#forum">Chamber forum</a>
             <a href="#sources">Sources</a>
           </aside>
 
@@ -125,6 +127,32 @@ export default async function CandidatePage({ params }: PageProps) {
                 <p>No position is inferred from the candidate’s background, endorsements, outside support, or connected organizations. This page will be updated if a direct response is received.</p>
               </section>
             )}
+
+            <section id="forum" className="questionnaire" aria-labelledby="forum-title">
+              <p className="eyebrow">September 27, 2026</p>
+              <h2 id="forum-title">Chamber candidate forum</h2>
+              <p className="section-dek">
+                These condensed responses are edited for clarity from the forum recording and its automated transcript.
+                Speaker attribution follows the forum’s rotating response order. {" "}
+                <a href="https://members.svcentralchamber.com/events/details/santa-clara-mayoral-candidate-forum-12450" rel="noreferrer">
+                  View the forum event page<span aria-hidden="true"> ↗</span>
+                </a>
+              </p>
+              <div className="question-list">
+                {forumQuestions.map((question, index) => (
+                  <details className="question" key={question.topic} open={index === 0}>
+                    <summary>
+                      <span className="question-number">{String(index + 1).padStart(2, "0")}</span>
+                      <span><strong>{question.topic}</strong><small>{question.question}</small></span>
+                      <span className="disclosure" aria-hidden="true">+</span>
+                    </summary>
+                    <div className="answer">
+                      <p>{forumAnswers[candidate.slug]?.[index]}</p>
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </section>
 
             <section id="sources" className="sources" aria-labelledby="sources-title">
               <p className="eyebrow">Documentation</p>
