@@ -20,7 +20,7 @@ export default function MethodologyPage() {
         <article className="method-content">
           <section>
             <span className="method-number">01</span>
-            <div><h2>Positions and records</h2><p>A candidate’s own statement is treated as the best source for that candidate’s current position. Official votes and public records are used when they show how a candidate acted on a specific proposal.</p></div>
+            <div><h2>Positions and records</h2><p>A candidate’s own questionnaire, interview, clarification, or public-forum statement is treated as the best source for that candidate’s current position. Official votes and public records are used when they show how a candidate acted on a specific proposal.</p></div>
           </section>
           <section>
             <span className="method-number">02</span>

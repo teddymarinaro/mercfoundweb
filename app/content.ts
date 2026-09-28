@@ -5,7 +5,7 @@ export const issueComparisons = [
     dek: "The central divide is not whether Santa Clara will add housing, but where it should go, how affordability should be produced, and how much discretion the city should retain.",
     positions: [
       ["Armando “Gary” Ferraris", "Supports more market-rate and affordable housing, selective ADUs and duplexes under compatibility standards, greater transit and corridor density, and exceeding state benchmarks where responsible."],
-      ["Karen Hardy", "Accepts state-required growth, is interested in cooperative housing, and says state law has sharply reduced local control over low-density zoning."],
+      ["Karen Hardy", "Accepts state-required growth and proposes studying a multi-unit cooperative-housing model with lower buy-in costs and the ability for residents to move among unit sizes as their needs change. She says state law has sharply reduced local control over low-density zoning."],
       ["David Kertes", "Supports market-rate, affordable, and workforce housing, with density downtown, along corridors, near transit, and on suitable undeveloped land. He is cautious about blanket neighborhood upzoning."],
       ["Kevin Park", "Favors project-by-project review, deeper affordability, and local findings on design, parking, infrastructure, welfare, the General Plan, and neighborhood character."],
       ["Kathy Watanabe", "Supports more housing in appropriate locations with infrastructure, financially feasible affordability requirements, and selective missing-middle housing—not blanket upzoning."],
@@ -85,7 +85,7 @@ export const issueComparisons = [
       ["Armando “Gary” Ferraris", "Calls for stronger stadium financial transparency and contractual accountability. He would speak publicly when outside conduct undermines election integrity or trust."],
       ["Karen Hardy", "Says the 49ers should stay out of local races and should not charge the Stadium Authority for offsite offices. She says public engagement can amplify independent spending."],
       ["David Kertes", "Says the 49ers appear to be meeting current obligations; his criticism centers on post-event neighborhood impacts. He would ask a damaging outside spender to stop."],
-      ["Kevin Park", "Says the 49ers may support candidates but should not recruit them. He opposes all independent expenditures and wants more resident- and General Fund-benefiting events."],
+      ["Kevin Park", "Says the 49ers may support candidates but should not recruit them. He opposes all independent expenditures, wants more resident- and General Fund-benefiting events, and proposes independent professional Stadium Authority management."],
       ["Kathy Watanabe", "Says the General Fund should not bear stadium costs assigned elsewhere under city agreements and Measure J. She would ask a damaging outside spender to stop."],
       ["Mike Wiltberger", "Opposes major 49ers-backed election spending and favors independent, professional stadium oversight. He would ask a damaging outside spender to stop and names Kevin Park as an opponent he would consider for a committee chair."],
     ],
